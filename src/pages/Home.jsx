@@ -66,7 +66,7 @@ export default function Home() {
                 BUILD STRENGTH. <br /><span className="bg-gradient-to-r from-amber-200 via-amber-400 to-orange-500 bg-clip-text text-transparent">TRANSFORM LIFE.</span>
               </motion.h1>
 
-              <motion.p variants={fadeInUp} className="text-zinc-400 text-base sm:text-lg leading-relaxed font-light max-w-xl">
+              <motion.p variants={fadeInUp} className="text-zinc-400 text-base sm:text-lg leading-relaxed font-light max-w-xl mb-6">
                 Achieve your dream physique with biomechanically calibrated equipment, personalized training programs, and motivational coaching designed to dismantle plateaus.
               </motion.p>
 
