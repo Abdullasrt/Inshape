@@ -49,7 +49,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-transparent to-zinc-950" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-7">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7">
               <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-6">
@@ -66,7 +66,7 @@ export default function Home() {
                 BUILD STRENGTH. <br /><span className="bg-gradient-to-r from-amber-200 via-amber-400 to-orange-500 bg-clip-text text-transparent">TRANSFORM LIFE.</span>
               </motion.h1>
 
-              <motion.p variants={fadeInUp} className="text-zinc-400 text-base sm:text-lg leading-relaxed mb-8 font-light max-w-xl">
+              <motion.p variants={fadeInUp} className="text-zinc-400 text-base sm:text-lg leading-relaxed font-light max-w-xl">
                 Achieve your dream physique with biomechanically calibrated equipment, personalized training programs, and motivational coaching designed to dismantle plateaus.
               </motion.p>
 
@@ -80,9 +80,9 @@ export default function Home() {
               </motion.div>
             </div>
 
-            <motion.div variants={fadeInUp} className="lg:col-span-5 relative group">
-              <div className="relative rounded-3xl overflow-hidden border border-zinc-800/80 bg-zinc-900/60 p-8 shadow-2xl backdrop-blur-xl">
-                <div className="flex items-center justify-between pb-6 border-b border-zinc-800/80">
+            <motion.div variants={fadeInUp} className="lg:col-span-5 relative group ">
+              <div className="relative rounded-3xl overflow-hidden border border-zinc-800/80 bg-zinc-900/60 p-7 shadow-2xl backdrop-blur-xl hover:border-amber-500/40">
+                <div className="flex items-center justify-between pb-5 border-b border-zinc-800/80">
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-2xl text-amber-400"><Dumbbell className="w-6 h-6" /></div>
                     <div>
@@ -119,67 +119,6 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
-        </div>
-      </motion.section>
-
-      {/* 2. BODYBUILDING SECTION */}
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-8 sm:p-12 backdrop-blur-md">
-          <motion.div variants={fadeInUp} className="lg:col-span-6 relative rounded-2xl overflow-hidden min-h-[320px] shadow-2xl border border-zinc-800">
-            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop" alt="Heavy Bodybuilding Workout" className="w-full h-full object-cover filter contrast-125 hover:scale-105 transition-transform duration-700" />
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 p-4 bg-zinc-950/80 rounded-xl border border-zinc-800/80 backdrop-blur-md flex items-center gap-3">
-              <Flame className="w-5 h-5 text-amber-400 flex-shrink-0" />
-              <p className="text-xs text-zinc-300 font-medium">Hypertrophy & progressive overload routines built for all levels.</p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-950/40 border border-amber-800/40 text-amber-400 font-bold text-xs tracking-widest uppercase">
-              <Dumbbell className="w-3.5 h-3.5" /> Bodybuilding & Hypertrophy
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Build Strength. Transform Your Body.</h2>
-            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">
-              At InShape Gym, our bodybuilding programs are designed to help members increase muscle mass, improve strength, and build a well-balanced physique. With modern strength-training equipment and professional guidance, members can follow structured workout routines based on their fitness level and goals.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              {BODYBUILDING_HIGHLIGHTS.map(({ icon: Icon, text, color }, i) => (
-                <div key={i} className="flex items-center gap-2 text-xs font-semibold text-zinc-300 bg-zinc-950/60 p-3 rounded-xl border border-zinc-800">
-                  <Icon className={`w-4 h-4 ${color}`} /> {text}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* 3. PERSONAL TRAINING SECTION */}
-      <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-8 sm:p-12 backdrop-blur-md">
-          <motion.div variants={fadeInUp} className="lg:col-span-6 space-y-6 order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-950/40 border border-orange-800/40 text-orange-400 font-bold text-xs tracking-widest uppercase">
-              <UserCheck className="w-3.5 h-3.5" /> Dedicated Coaching
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Personal Training Designed for You</h2>
-            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-light">
-              Achieve your fitness goals faster with personalized guidance from our experienced trainers. Whether your goal is weight loss, muscle gain, improved endurance, or overall fitness, our trainers will create a workout plan based on your body type, experience, and personal objectives.
-            </p>
-
-            <ul className="space-y-3 text-xs sm:text-sm text-zinc-300">
-              {PT_POINTS.map(({ title, desc, color }, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <span className={`w-2 h-2 rounded-full ${color}`} />
-                  <strong>{title}</strong> {desc}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="lg:col-span-6 relative rounded-2xl overflow-hidden min-h-[320px] shadow-2xl border border-zinc-800 order-1 lg:order-2">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop" alt="Personal Trainer Guiding Member" className="w-full h-full object-cover filter contrast-125 hover:scale-105 transition-transform duration-700" />
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
-          </motion.div>
         </div>
       </motion.section>
 

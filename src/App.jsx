@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 // Layout & Component Imports
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Page Sections
-import Home from './pages/Home';
-import About from './pages/About';
-import Programs from './pages/Programs';
-import BMICalculator from './pages/BMICalculator';
-import Pricing from './pages/Pricing';
-import Trainers from './pages/Trainers';
-import Contact from './pages/Contact';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Programs from "./pages/Programs";
+import BMICalculator from "./pages/BMICalculator";
+import Pricing from "./pages/Pricing";
+import Trainers from "./pages/Trainers";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -23,28 +23,23 @@ export default function App() {
       <Navbar />
 
       {/* Single Page Stacked Sections */}
-      <main className="flex-grow pt-20 z-10 space-y-12 md:space-y-20">
+      <main className="flex-grow pt-8 z-10 space-y-12 md:space-y-20">
+        {" "}
         <section id="home">
           <Home />
         </section>
-
         <section id="about">
           <About />
         </section>
-
         {/* 2. Add Programs here */}
         <Programs />
-
         <BMICalculator />
-
         <section id="pricing">
           <Pricing />
         </section>
-
         <section id="trainers">
           <Trainers />
         </section>
-
         <section id="contact">
           <Contact />
         </section>

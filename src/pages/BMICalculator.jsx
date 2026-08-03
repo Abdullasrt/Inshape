@@ -87,28 +87,24 @@ export default function BMICalculator() {
         <form onSubmit={handleCalculate} className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
           <div>
             <label htmlFor="bmi-height" className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Height (cm)</label>
-            <input
-              id="bmi-height"
-              type="number"
-              inputMode="decimal"
-              value={height}
-              onChange={(e) => setHeight(e.target.value)}
-              placeholder="e.g. 170"
-              className="w-full px-4 py-3.5 bg-zinc-950 border border-zinc-800 focus:border-amber-400 rounded-xl text-sm text-white focus:outline-none transition duration-300"
-            />
-          </div>
+<input
+  id="bmi-height"
+  type="number"
+  inputMode="decimal"
+  value={height}
+  onChange={(e) => setHeight(e.target.value)}
+  className="w-full px-4 py-3.5 bg-zinc-950 border border-zinc-800 focus:border-amber-400 rounded-xl text-sm text-white focus:outline-none transition duration-300 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+/>          </div>
           <div>
             <label htmlFor="bmi-weight" className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Weight (kg)</label>
-            <input
-              id="bmi-weight"
-              type="number"
-              inputMode="decimal"
-              value={weight}
-              onChange={(e) => setWeight(e.target.value)}
-              placeholder="e.g. 68"
-              className="w-full px-4 py-3.5 bg-zinc-950 border border-zinc-800 focus:border-amber-400 rounded-xl text-sm text-white focus:outline-none transition duration-300"
-            />
-          </div>
+<input
+  id="bmi-weight"
+  type="number"
+  inputMode="decimal"
+  value={weight}
+  onChange={(e) => setWeight(e.target.value)}
+  className="w-full px-4 py-3.5 bg-zinc-950 border border-zinc-800 focus:border-amber-400 rounded-xl text-sm text-white focus:outline-none transition [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+/>          </div>
 
           <div className="sm:col-span-2 flex flex-col sm:flex-row gap-3 pt-2">
             <button

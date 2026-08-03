@@ -50,17 +50,17 @@ export default function Contact() {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Full Name</label>
-              <input type="text" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 ${errors.name ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`} placeholder="John Doe" {...register('name', { required: true })} />
+              <input type="text" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 ${errors.name ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`}  {...register('name', { required: true })} />
             </div>
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Email Address</label>
-              <input type="email" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 ${errors.email ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`} placeholder="john@example.com" {...register('email', { required: true, pattern: /^\S+@\S+$/i })} />
+              <input type="email" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 ${errors.email ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`}  {...register('email', { required: true, pattern: /^\S+@\S+$/i })} />
             </div>
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Message</label>
-              <textarea rows="4" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 resize-none ${errors.message ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`} placeholder="State your athletic goals or questions..." {...register('message', { required: true })} />
+              <textarea rows="4" className={`w-full px-4 py-3.5 bg-zinc-950 border rounded-xl text-xs text-white focus:outline-none transition duration-300 resize-none ${errors.message ? 'border-red-500/80 bg-red-500/5 focus:border-red-500' : 'border-zinc-800 focus:border-amber-400'}`} {...register('message', { required: true })} />
             </div>
 
             <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} transition={{ type: "spring", stiffness: 350, damping: 20 }} type="submit" className="w-full bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-zinc-950 font-black text-xs uppercase tracking-widest py-4 rounded-xl transition shadow-[0_0_20px_rgba(245,158,11,0.2)] flex items-center justify-center gap-2">

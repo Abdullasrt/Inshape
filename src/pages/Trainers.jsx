@@ -65,10 +65,6 @@ export default function Trainers() {
               </div>
             </div>
 
-            <div className="inline-flex items-center justify-center gap-1.5 text-zinc-500 text-xs font-mono pt-2 border-t border-zinc-800/60">
-              <Award className="w-3.5 h-3.5 text-amber-400" />
-              <span>{t.experience}</span>
-            </div>
           </motion.div>
         ))}
       </motion.div>
