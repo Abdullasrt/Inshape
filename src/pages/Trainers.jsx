@@ -14,9 +14,9 @@ const fadeInUp = {
 
 export default function Trainers() {
   const trainers = [
-    { name: 'Marcus Vance', role: 'Head Strength Coach', spec: 'Powerlifting & Biomechanics', experience: '12+ Years Experience' },
-    { name: 'Elena Rostova', role: 'Functional Movement Specialist', spec: 'Mobility & Metabolic Conditioning', experience: '8+ Years Experience' },
-    { name: 'David Miller', role: 'Bodybuilding & Nutrition Lead', spec: 'Contest Prep & Physiology', experience: '10+ Years Experience' },
+    { name: 'Arjun Menon', role: 'Head Strength Coach', spec: 'Powerlifting, strength training & workout technique', experience: '12+ Years Experience' },
+    { name: 'Anjali Nair', role: 'Personal Training Lead', spec: 'Weight management & functional fitness', experience: '8+ Years Experience' },
+    { name: 'Vishnu Prasad', role: 'Bodybuilding & Nutrition Coach', spec: 'Muscle building, progressive overload & diet planning', experience: '10+ Years Experience' },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function Trainers() {
       <motion.div variants={fadeInUp} className="text-center max-w-2xl mx-auto mb-16">
         <h2 className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3">Expert Guidance</h2>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">ELITE COACHING STAFF</h1>
-        <p className="text-zinc-400">Certified athletic coaches dedicated to guiding your target physical performance.</p>
+        <p className="text-zinc-400">Certified coaches dedicated to guiding you toward your fitness goals, every step of the way.</p>
       </motion.div>
 
       {/* Grid */}

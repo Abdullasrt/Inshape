@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 // Page Sections
 import Home from './pages/Home';
 import About from './pages/About';
+import Programs from './pages/Programs';
+import BMICalculator from './pages/BMICalculator';
 import Pricing from './pages/Pricing';
 import Trainers from './pages/Trainers';
 import Contact from './pages/Contact';
@@ -30,6 +32,10 @@ export default function App() {
           <About />
         </section>
 
+        {/* 2. Add Programs here */}
+        <Programs />
+
+        <BMICalculator />
 
         <section id="pricing">
           <Pricing />

@@ -8,7 +8,7 @@ const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, trans
 const itemVariants = { hidden: { opacity: 0, y: 20, scale: 0.98 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: smoothEasing } } };
 
 export default function Contact() {
-  const mapUrl = "url?id=6";
+  const mapUrl = "https://maps.google.com/?cid=6939187148432834076";
   const [status, setStatus] = useState({ type: null, message: '' });
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
@@ -86,7 +86,11 @@ export default function Contact() {
 
           <motion.div variants={itemVariants} whileHover={{ y: -2 }} className="flex items-center gap-5 p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-amber-500/40 transition duration-300 backdrop-blur-md">
             <div className="p-3.5 bg-zinc-900 border border-zinc-800 rounded-2xl text-amber-400"><Clock className="w-6 h-6" /></div>
-            <div><h4 className="font-bold text-white text-sm uppercase">Gym Hours</h4><p className="text-xs text-zinc-400 mt-1">Mon - Sun: 05:00 - 23:00 (24/7 VIP Access)</p></div>
+            <div>
+              <h4 className="font-bold text-white text-sm uppercase">Gym Hours</h4>
+              <p className="text-xs text-zinc-400 mt-1">Morning: 5:30 AM - 9:00 AM</p>
+              <p className="text-xs text-zinc-400 mt-0.5">Evening: 3:30 PM - 9:30 PM</p>
+            </div>
           </motion.div>
 
 <motion.div variants={itemVariants} whileHover={{ y: -2 }} className="flex items-center gap-5 p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-amber-500/40 transition duration-300 backdrop-blur-md">

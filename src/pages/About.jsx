@@ -12,7 +12,7 @@ export default function About() {
 
   const values = [
     { icon: <Target className="w-6 h-6 text-amber-400" />, title: "Results-Driven Focus", desc: "Programs and gear engineered to break plateaus and achieve tangible physical results." },
-    { icon: <Dumbbell className="w-6 h-6 text-orange-400" />, title: "Uncompromising Gear", desc: "Biologically calibrated strength equipment and competition-grade barbells." },
+    { icon: <Dumbbell className="w-6 h-6 text-orange-400" />, title: "Quality Equipment", desc: "Well-maintained strength equipment and competition-grade barbells for serious training." },
     { icon: <ShieldCheck className="w-6 h-6 text-emerald-400" />, title: "Elite Environment", desc: "A high-energy, focused atmosphere for athletes who take discipline seriously." },
   ];
 

@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
           </a>
           <p className="text-zinc-500 text-xs leading-relaxed">
-            Unleash your inner predator. High-performance strength equipment, personalized training, and unlimited potential.
+            Modern strength and cardio equipment, structured training programs, and dedicated coaching to help you reach your fitness goals.
           </p>
         </div>
 
@@ -32,7 +32,8 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-4 text-xs tracking-widest uppercase">Navigation</h4>
           <ul className="space-y-2.5 text-xs">
-            <li><a href="#programs" className="hover:text-amber-400 transition">Programs & Schedules</a></li>
+            <li><a href="#programs" className="hover:text-amber-400 transition">Programs & Facilities</a></li>
+            <li><a href="#bmi" className="hover:text-amber-400 transition">BMI Calculator</a></li>
             <li><a href="#pricing" className="hover:text-amber-400 transition">Membership Tiers</a></li>
             <li><a href="#trainers" className="hover:text-amber-400 transition">Certified Coaches</a></li>
             <li><a href="#contact" className="hover:text-amber-400 transition">Facility Location</a></li>
@@ -43,9 +44,9 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-4 text-xs tracking-widest uppercase">Operating Hours</h4>
           <ul className="space-y-2 text-xs text-zinc-500">
-            <li className="flex justify-between"><span>Mon - Fri</span> <span className="text-white font-mono">05:00 - 23:00</span></li>
-            <li className="flex justify-between"><span>Sat - Sun</span> <span className="text-white font-mono">06:00 - 22:00</span></li>
-            <li className="text-amber-400 font-semibold pt-2">24/7 Access Available for VIP Tiers</li>
+            <li className="flex justify-between"><span>Morning</span> <span className="text-white font-mono">5:30 - 9:00 AM</span></li>
+            <li className="flex justify-between"><span>Evening</span> <span className="text-white font-mono">3:30 - 9:30 PM</span></li>
+            <li className="text-amber-400 font-semibold pt-2">Open 7 Days a Week</li>
           </ul>
         </div>
 

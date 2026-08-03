@@ -8,6 +8,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
+    { name: 'Programs', id: 'programs' },
+    { name: 'BMI Calc', id: 'bmi' },
     { name: 'Membership', id: 'pricing' },
     { name: 'Trainers', id: 'trainers' },
     { name: 'Contact', id: 'contact' },
@@ -66,7 +68,7 @@ export default function Navbar() {
                 <a
                   key={link.id}
                   href={`#${link.id}`}
-                  className={`px-5 py-2 rounded-xl text-xs font-bold tracking-wider uppercase transition-all duration-300 ${
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold tracking-wider uppercase transition-all duration-300 whitespace-nowrap ${
                     isActive
                       ? 'bg-amber-400 text-zinc-950 shadow-[0_0_15px_rgba(245,158,11,0.3)]'
                       : 'text-zinc-400 hover:text-white hover:bg-zinc-800/50'

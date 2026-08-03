@@ -29,7 +29,7 @@ export default function Pricing() {
       price: billingCycle === 'monthly' ? '₹1500' : '₹1200',
       period: '/mo',
       description: 'Comprehensive membership designed for total performance.',
-      features: ['24/7 Unlimited facility access', 'All group functional classes', 'Custom monthly programming', 'Sauna & Infrared recovery zone', '1 Monthly Personal Coaching session'],
+      features: ['Full access during all gym hours', 'All group functional classes', 'Custom monthly programming', 'Sauna & Infrared recovery zone', '1 Monthly Personal Coaching session'],
       highlighted: true,
     },
     {
