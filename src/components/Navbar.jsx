@@ -8,8 +8,9 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
-    { name: 'Programs', id: 'programs' },
     { name: 'BMI Calc', id: 'bmi' },
+        { name: 'Programs', id: 'programs' },
+
     { name: 'Membership', id: 'pricing' },
     { name: 'Trainers', id: 'trainers' },
     { name: 'Contact', id: 'contact' },

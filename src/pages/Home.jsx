@@ -58,7 +58,7 @@ export default function Home() {
                 </motion.div>
                 <div>
                   <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-400 block">Welcome To</span>
-                  <span className="text-lg font-black tracking-wider uppercase text-white">INSHAPE GYM UNLIMITED</span>
+                  <span className="text-lg font-black tracking-wider uppercase text-white">INSHAPE UNISEX GYM UNLIMITED</span>
                 </div>
               </motion.div>
 

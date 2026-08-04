@@ -31,9 +31,10 @@ export default function App() {
         <section id="about">
           <About />
         </section>
+                <BMICalculator />
+
         {/* 2. Add Programs here */}
         <Programs />
-        <BMICalculator />
         <section id="pricing">
           <Pricing />
         </section>

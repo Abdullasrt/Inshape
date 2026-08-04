@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Award } from 'lucide-react';
+import { Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const smoothEasing = [0.16, 1, 0.3, 1];
@@ -14,9 +14,8 @@ const fadeInUp = {
 
 export default function Trainers() {
   const trainers = [
-    { name: 'Arjun Menon', role: 'Head Strength Coach', spec: 'Powerlifting, strength training & workout technique', experience: '12+ Years Experience' },
-    { name: 'Anjali Nair', role: 'Personal Training Lead', spec: 'Weight management & functional fitness', experience: '8+ Years Experience' },
-    { name: 'Vishnu Prasad', role: 'Bodybuilding & Nutrition Coach', spec: 'Muscle building, progressive overload & diet planning', experience: '10+ Years Experience' },
+    { name: 'Ramsheed c u', role: 'Head Strength Coach', spec: 'Powerlifting, strength training & workout technique', experience: '12+ Years Experience' },
+    { name: 'Female trainer', role: 'Available', spec: 'Weight management & functional fitness', experience: '8+ Years Experience' },
   ];
 
   return (
@@ -36,7 +35,7 @@ export default function Trainers() {
       </motion.div>
 
       {/* Grid */}
-      <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
         {trainers.map((t, idx) => (
           <motion.div
             key={idx}
